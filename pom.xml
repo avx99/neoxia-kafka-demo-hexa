@@ -31,6 +31,7 @@
         <module>infra/kafka/kafka-config</module>
         <module>infra/kafka/kafka-producer</module>
         <module>infra/kafka/kafka-consumer</module>
+        <module>order-service/order-domain/order-application-service</module>
     </modules>
 
     <properties>

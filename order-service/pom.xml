@@ -10,4 +10,12 @@
     </parent>
 
     <artifactId>order-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>order-application</module>
+        <module>order-container</module>
+        <module>order-data-access</module>
+        <module>order-domain</module>
+        <module>order-messaging</module>
+    </modules>
 </project>
