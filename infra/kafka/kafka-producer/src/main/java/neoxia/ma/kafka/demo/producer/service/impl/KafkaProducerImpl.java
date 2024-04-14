@@ -1,9 +1,8 @@
 package neoxia.ma.kafka.demo.producer.service.impl;
 
-import com.food.ordering.system.kafka.producer.exception.KafkaProducerException;
-import com.food.ordering.system.kafka.producer.service.KafkaProducer;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.avro.specific.SpecificRecordBase;
+import neoxia.ma.kafka.demo.producer.exception.KafkaProducerException;
+import neoxia.ma.kafka.demo.producer.service.KafkaProducer;
 import org.springframework.kafka.KafkaException;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -16,7 +15,7 @@ import java.io.Serializable;
 
 @Slf4j
 @Component
-public class KafkaProducerImpl<K extends Serializable, V extends SpecificRecordBase> implements KafkaProducer<K, V> {
+public class KafkaProducerImpl<K extends Serializable, V extends Serializable> implements KafkaProducer<K, V> {
 
     private final KafkaTemplate<K, V> kafkaTemplate;
 

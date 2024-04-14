@@ -24,17 +24,11 @@
         <module>order-service</module>
         <module>payment-service</module>
         <module>delivery-service</module>
-        <module>common/common-platform</module>
-        <module>common/common-data-access</module>
-        <module>common/common-domain</module>
-        <module>infra/kafka</module>
-        <module>infra/kafka/kafka-config</module>
-        <module>infra/kafka/kafka-producer</module>
-        <module>infra/kafka/kafka-consumer</module>
         <module>order-service/order-domain/order-application-service</module>
     </modules>
 
     <dependencies>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -43,6 +37,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
         </dependency>
     </dependencies>
 
