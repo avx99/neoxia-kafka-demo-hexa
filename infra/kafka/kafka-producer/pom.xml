@@ -11,4 +11,33 @@
 
     <artifactId>kafka-producer</artifactId>
 
+
+    <dependencies>
+
+        <dependency>
+            <groupId>neoxia.ma.kafka.demo</groupId>
+            <artifactId>kafka-config</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>neoxia.ma.kafka.demo</groupId>
+            <artifactId>order-domain-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>neoxia.ma.kafka.demo</groupId>
+            <artifactId>payment-domain-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>neoxia.ma.kafka.demo</groupId>
+            <artifactId>delivery-domain-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
