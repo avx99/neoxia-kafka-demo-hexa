@@ -23,6 +23,12 @@ public class Order extends AggregateRoot<OrderId> {
     public static final String FAILURE_MESSAGE_DELIMITER = ",";
 
 
+    public void init() {
+        if (orderStatus != null) {
+            throw new OrderDomainException("Order is not in correct state to be initialized!");
+        }
+        orderStatus = OrderStatus.PENDING;
+    }
 
     public void pay() {
         if (orderStatus != OrderStatus.PENDING) {

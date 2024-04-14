@@ -18,10 +18,9 @@ import java.util.UUID;
 @Entity
 public class OrderEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private UUID customerId;
-    private UUID restaurantId;
-    private UUID trackingId;
     private BigDecimal price;
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;

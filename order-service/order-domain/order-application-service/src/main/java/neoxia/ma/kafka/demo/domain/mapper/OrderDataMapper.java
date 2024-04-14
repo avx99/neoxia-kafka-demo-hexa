@@ -29,6 +29,7 @@ public class OrderDataMapper {
         return CreateOrderResponse.builder()
                 .orderStatus(order.getOrderStatus())
                 .message(message)
+                .id(order.getId().getValue().toString())
                 .build();
     }
 

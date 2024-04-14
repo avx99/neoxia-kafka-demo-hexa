@@ -37,9 +37,10 @@ public class OrderCreateHelper {
     public Order persistOrder(CreateOrderCommand createOrderCommand) {
         checkCustomer(createOrderCommand.getCustomerId());
         var order = orderDataMapper.createOrderCommandToOrder(createOrderCommand);
-        saveOrder(order);
-        log.info("Order is created with id: {}", order.getId().getValue());
-        return order;
+        order.init();
+        var output = saveOrder(order);
+        log.info("Order is created with id: {}", output.getId().getValue());
+        return output;
     }
 
 
