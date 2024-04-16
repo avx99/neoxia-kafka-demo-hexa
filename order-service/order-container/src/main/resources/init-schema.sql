@@ -103,3 +103,26 @@ INSERT INTO customer.customers
 VALUES('d215b5f8-0249-4dc5-89a3-51fd148cfb41'::uuid, 'oussama.abouzid', 'oussama', 'abouzid');
 
 
+DROP SCHEMA IF EXISTS payment CASCADE;
+
+CREATE SCHEMA payment;
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE payment.payments
+(
+    id uuid NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    customer_id uuid NOT NULL,
+    order_id uuid NOT NULL,
+    CONSTRAINT payments_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE payment.payments_threshold
+(
+    id uuid NOT NULL,
+    total_amount numeric(10,2) NOT NULL,
+    customer_id uuid NOT NULL,
+    order_id uuid NOT NULL,
+    CONSTRAINT payments_threshold_pkey PRIMARY KEY (id)
+);

@@ -13,7 +13,6 @@
     <artifactId>order-application-service</artifactId>
 
     <dependencies>
-
         <dependency>
             <groupId>neoxia.ma.kafka.demo</groupId>
             <artifactId>order-domain-core</artifactId>

@@ -9,10 +9,11 @@ import neoxia.ma.kafka.domain.valueobject.Money;
 import neoxia.ma.kafka.domain.valueobject.OrderId;
 import neoxia.ma.kafka.domain.valueobject.OrderStatus;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 
-public class Order extends AggregateRoot<OrderId> {
+public class Order extends AggregateRoot<OrderId> implements Serializable {
     private final CustomerId customerId;
     private final Money price;
     private final List<OrderItem> items;

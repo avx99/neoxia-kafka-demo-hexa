@@ -10,4 +10,12 @@
     </parent>
 
     <artifactId>payment-domain-core</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>neoxia.ma.kafka.demo</groupId>
+            <artifactId>common-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
