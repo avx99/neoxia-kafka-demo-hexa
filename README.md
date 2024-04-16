@@ -12,7 +12,7 @@ To run the Neoxia Kafka Demo Microservice, follow these steps:
 
 1. **Clone the repository:** https://github.com/avx99/neoxia-kafka-demo-microservice
 2. **Navigate to the project directory**
-3. **Navigate to docker-compose folder**
+3. **Navigate to docker-compose folder under infra module**
 4. **Execute :**
 ```
  init.bat <OR> ./init.sh for linux 
