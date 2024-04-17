@@ -10,7 +10,7 @@ The Neoxia Kafka Demo Microservice provides a simple example of integrating Kafk
 
 To run the Neoxia Kafka Demo Microservice, follow these steps:
 
-1. **Clone the repository:** https://github.com/avx99/neoxia-kafka-demo-microservice
+1. **Clone the repository:** https://github.com/avx99/neoxia-kafka-demo-hexa
 2. **Navigate to the project directory**
 3. **Navigate to docker-compose folder under infra module**
 4. **Execute :**
